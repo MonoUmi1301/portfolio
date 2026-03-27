@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montira Naewnak — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="nav-wrap">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">Portfolio</a>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#other" class="nav-link">Other Works</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home-wrap">
+            <p class="home-eyebrow">Hello, I'm</p>
+            <h1 class="home-name">Montira Naewnak</h1>
+            <h2 class="home-role">Full Stack Developer</h2>
+            <p class="home-desc">
+                I'm a 3rd-year Information Technology student at Kasetsart University
+                (Kamphaeng Saen Campus), passionate about web development and building
+                applications. I love seeing ideas come to life through clean, functional design.
+            </p>
+            <div class="home-buttons">
+                <a href="#about" class="btn btn-purple">Learn More About Me</a>
+                <a href="#projects" class="btn btn-blue">View My Projects</a>
+                <a href="#contact" class="btn btn-dark">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-bg">
+        <div class="section-wrap">
+            <h2 class="section-title">About Me</h2>
+
+            <!-- Profile row -->
+            <div class="about-profile-row">
+                <div class="profile-pic">
+                    <img src="./assets/images/me.jpg" alt="Montira Naewnak">
+                </div>
+                <div class="about-intro">
+                    <p class="about-text">
+                        I'm Montira Naewnak, a passionate Full Stack Developer with a love for
+                        creating dynamic web applications. I'm always eager to learn new technologies
+                        and improve my skills.
+                    </p>
+                    <p class="section-label">Education</p>
+                    <p>Kasetsart University (Kamphaeng Saen Campus)</p>
+                    <p class="about-text">Information Technology — 2023 — Present</p>
+                    <p class="section-label">Hobbies & Interests</p>
+                    <p class="about-text">Reading books, playing video games, listening to music, watching anime</p>
+                    <p class="section-label">Connect</p>
+                    <div class="connect-links">
+                        <a href="https://github.com/MonoUmi1301" class="connect-link">GitHub</a>
+                        <a href="mailto:montira1301@gmail.com" class="connect-link">Email : montira1301@gmail.com</a>
+                        <a href="./assets/files/cv.pdf" download class="connect-link">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="about-tabs-wrap">
+                <div class="about-tab-bar">
+                    <button class="about-tab-btn active" data-tab="skills">Skills</button>
+                    <button class="about-tab-btn" data-tab="certs">Certificates</button>
+                </div>
+
+                <!-- Skills tab -->
+                <div class="about-tab-panel active" id="tab-skills">
+                    <div id="skills-container">
+                        <p style="color:var(--gray); font-size: 14px;">Loading skills...</p>
+                    </div>
+                </div>
+
+                <!-- Certs tab -->
+                <div class="about-tab-panel" id="tab-certs">
+                    <div class="cert-wrap">
+                        <div class="cert-item">
+                            <img src="./assets/images/cer1.png" alt="JavaScript" class="cert-img">
+                            <p class="cert-name">Intermediate JavaScript</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="./assets/images/cer2.png" alt="JavaScript" class="cert-img">
+                            <p class="cert-name">Basic JavaScript</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="./assets/images/cer3.png" alt="Java" class="cert-img">
+                            <p class="cert-name">Basic JAVA</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="./assets/images/cer4.png" alt="Python" class="cert-img">
+                            <p class="cert-name">Basic Python</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="./assets/images/cer5.png" alt="CSS" class="cert-img">
+                            <p class="cert-name">Basic CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate modal -->
+            <div id="certModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImg">
+                <div id="caption"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-wrap">
+            <h2 class="section-title">Projects</h2>
+            <div id="projects-grid" class="cards-grid"></div>
+        </div>
+    </section>
+
+    <!-- Other Works -->
+    <section id="other" class="about-bg">
+        <div class="section-wrap">
+            <h2 class="section-title">Other Works</h2>
+            <div id="other-grid" class="cards-grid-2"></div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-bg">
+        <div class="section-wrap">
+            <h2 class="section-title" style="color:white;">Contact</h2>
+            <div class="contact-layout">
+
+                <div class="contact-left">
+                    <p class="contact-desc">
+                        I'm currently open to new opportunities. Whether you have a question
+                        or just want to say hi, feel free to reach out!
+                    </p>
+                    <a href="mailto:montira1301@gmail.com" class="contact-email">montira1301@gmail.com</a>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div>
+                        <label class="form-label">Name</label>
+                        <input id="name" type="text" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label class="form-label">Email</label>
+                        <input id="email" type="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div>
+                        <label class="form-label">Message</label>
+                        <textarea id="message" class="form-input" rows="5" placeholder="Your message..."
+                            required></textarea>
+                    </div>
+                    <p id="formStatus" class="form-status"></p>
+                    <button id="submitBtn" type="submit" class="btn btn-dark" style="width:fit-content;">Send
+                        Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-wrap">
+        <p class="footer-text">&copy; 2026 Montira Naewnak. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
